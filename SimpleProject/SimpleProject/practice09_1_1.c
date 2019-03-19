@@ -1,46 +1,17 @@
 ﻿#include<stdio.h>
 
-int Max(int i,int j,int k) {
+int Max(int n1,int n2,int n3) {
 	
-	if (i >j && i>k )
-		return i;
-	else if (j > i && j > k)
-		return j;
-	else if (k > j && k > i)
-		return k;
-	else if (i > j && i >= k)
-		return i;
-	else if (i >= j && i > k)
-		return i;
-	else if (j > j && j >= k)
-		return j;
-	else if (j >= i && j > k)
-		return j;
-	else if (k > j && k >= i)
-		return k;
-	else if (k >= j && k > i)
-		return k;
+	if (n1 > n2)
+		return (n1 > n3) ? n1 : n3;
+	else
+		return (n2 > n3) ? n2 : n3;
 }
-int Min(int i, int j, int k) {
-	if (i < j && i < k)
-		return i;
-	else if (j < i && j < k)
-		return j;
-	else if (k < j && k < i)
-		return k;
-	else if (i < j && i <= k)
-		return i;
-	else if (i <= j && i < k)
-		return i;
-	else if (j < j && j <= k)
-		return j;
-	else if (j <= i && j < k)
-		return j;
-	else if (k < j && k <= i)
-		return k;
-	else if (k <= j && k < i)
-		return k;
-	
+int Min(int n1, int n2, int n3) {
+	if (n1 < n2)
+		return(n1 < n3) ? n1 : n3;
+	else
+		return(n2 < n3) ? n2 : n3;
 }
 
 int main(void) {
