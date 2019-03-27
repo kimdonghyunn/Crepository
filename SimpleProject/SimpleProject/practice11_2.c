@@ -8,5 +8,6 @@ int main(void) {
 	for (i = 0; i < arlen; i++){
 	printf("%c", arraay[i]);
 	}
+	printf("\n%s", arraay);
 	return 0;
 }
