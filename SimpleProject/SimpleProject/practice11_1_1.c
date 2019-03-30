@@ -6,22 +6,16 @@ int main(void) {
 	for (i = 0; i < 5; i++) {
 		printf("%d번째 정수를입력하세요.\n", i + 1);
 		scanf("%d", &arrayy[i]);
-	}
-	for (i = 0; i < 4; i++) {
-		if (arrayy[0] > arrayy[i + 1]) {
-			max = arrayy[0];
-		}
-		else {
-			max = arrayy[i + 1];
+	}	max=min = arrayy[0];
+	for (i = 0; i < 5; i++) {
+		if (max < arrayy[i]) {
+			max = arrayy[i];
 		}
 	}
 	printf("최대값:%d\n", max);
-	for (i = 0; i < 4; i++) {
-		if (arrayy[0] > arrayy[i + 1]) {
-			min = arrayy[i + 1];
-		}
-		else {
-			min = arrayy[0];
+	for (i = 0; i < 5; i++) {
+		if (min > arrayy[i]) {
+			min = arrayy[i];
 		}
 	}
 	printf("최소값:%d\n", min);
