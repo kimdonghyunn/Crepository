@@ -11,5 +11,4 @@ int main(void) {
 		printf("%d ", *(ptr + i));
 	}
 	return 0;
-
 }
