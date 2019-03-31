@@ -1,5 +1,5 @@
-#include<stdio.h>
-
+﻿#include<stdio.h>
+//포인터를 이용해 매개변수로 배열의 주소를이용하여 배열의 값도 바꾸어줄수있다.
 void ShowArayElem(int * param, int len) {
 	int i;
 	for (i = 0; i < len; i++) {
